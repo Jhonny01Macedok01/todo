@@ -19,7 +19,7 @@ public class Todo implements Serializable {
 	private Integer id;
 	private String titulo;
 	private String Descricao;
-	private LocalDateTime dataPraFinalizar;
+	private LocalDateTime dataParaFinalizar;
 	private Boolean finalizado = false;
 	public Todo() {
 		super();
@@ -29,7 +29,7 @@ public class Todo implements Serializable {
 		this.id = id;
 		this.titulo = titulo;
 		Descricao = descricao;
-		this.dataPraFinalizar = dataPraFinalizar;
+		this.dataParaFinalizar = dataPraFinalizar;
 		this.finalizado = finalizado;
 	}
 	public Integer getId() {
@@ -51,10 +51,10 @@ public class Todo implements Serializable {
 		Descricao = descricao;
 	}
 	public LocalDateTime getDataPraFinalizar() {
-		return dataPraFinalizar;
+		return dataParaFinalizar;
 	}
 	public void setDataPraFinalizar(LocalDateTime dataPraFinalizar) {
-		this.dataPraFinalizar = dataPraFinalizar;
+		this.dataParaFinalizar = dataPraFinalizar;
 	}
 	public Boolean getFinalizado() {
 		return finalizado;
